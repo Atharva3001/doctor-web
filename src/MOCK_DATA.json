@@ -1,0 +1,108 @@
+[
+    {
+        "first_name": "Bradan",
+        "last_name": "Lingfoot",
+        "speciality": "Neurologists"
+    },
+    {
+        "first_name": "Loree",
+        "last_name": "Meldrum",
+        "speciality": "Orthopaedic"
+    },
+    {
+        "first_name": "Edwin",
+        "last_name": "Hove",
+        "speciality": "Neurologists"
+    },
+    {
+        "first_name": "Lyndell",
+        "last_name": "Anthiftle",
+        "speciality": "Orthopaedic"
+    },
+    {
+        "first_name": "Adore",
+        "last_name": "Yo",
+        "speciality": "Neurologists"
+    },
+    {
+        "first_name": "Izabel",
+        "last_name": "Giuron",
+        "speciality": "Orthopaedic"
+    },
+    {
+        "first_name": "Tripp",
+        "last_name": "Hinckesman",
+        "speciality": "Orthopaedic"
+    },
+    {
+        "first_name": "Talyah",
+        "last_name": "Stelfox",
+        "speciality": "Orthopaedic"
+    },
+    {
+        "first_name": "Ottilie",
+        "last_name": "Fennessy",
+        "speciality": "Gynecologist"
+    },
+    {
+        "first_name": "Rodrick",
+        "last_name": "Klessmann",
+        "speciality": "Gynecologist"
+    },
+    {
+        "first_name": "Franny",
+        "last_name": "Bernardez",
+        "speciality": "Gynecologist"
+    },
+    {
+        "first_name": "Stephenie",
+        "last_name": "Pardi",
+        "speciality": "Homeopathy"
+    },
+    {
+        "first_name": "Noble",
+        "last_name": "Tisun",
+        "speciality": "Homeopathy"
+    },
+    {
+        "first_name": "Ramonda",
+        "last_name": "Blasius",
+        "speciality": "Homeopathy"
+    },
+    {
+        "first_name": "Di",
+        "last_name": "Korneichik",
+        "speciality": "Neurosurgeon"
+    },
+    {
+        "first_name": "Sibylla",
+        "last_name": "Helling",
+        "speciality": "Neurosurgeon"
+    },
+    {
+        "first_name": "Alison",
+        "last_name": "Drews",
+        "speciality": "Neurosurgeon"
+    },
+    {
+        "first_name": "Delila",
+        "last_name": "Nolin",
+        "speciality": "Family Physicians"
+    },
+    {
+        "first_name": "Paula",
+        "last_name": "Hallatt",
+        "speciality": "Family Physicians"
+    },
+    {
+        "first_name": "Marcella",
+        "last_name": "Carlile",
+        "speciality": "Family Physicians"
+    },
+    {
+        "first_name": "Lucifer",
+        "last_name": "Mornigstar",
+        "speciality": "Therapist"
+    }
+  
+]
