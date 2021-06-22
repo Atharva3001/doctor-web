@@ -92,6 +92,13 @@
     text-decoration: none;
 }
 
+.error {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
     .Grid-container {
         display: grid;

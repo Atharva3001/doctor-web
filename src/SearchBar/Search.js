@@ -6,18 +6,18 @@ import { Link } from 'react-router-dom';
 export default class Search extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             searchQuery: "",
-            Errormessage: ""
+            Errormessage: "",
+            Result: {}
         }
         this.handleChange = this.handleChange.bind(this)
     }
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value })
-        console.log(this.state)
     }
     render() {
+        var x;
         return (
             <div className="Main">
                 <div className="NavBar">
@@ -39,31 +39,36 @@ export default class Search extends Component {
                     </div>
                 </div>
                 <div className="Grid-container">
-                    {JSONDATA.filter((val) => {
-                        if (this.state.searchQuery === "") {
-                            return val
-                        }
-                        else if (val.first_name.toLowerCase().includes(this.state.searchQuery.toLowerCase())) {
-                            return val
-                        }
-                        else if (val.last_name.toLowerCase().includes(this.state.searchQuery.toLowerCase())) {
-                            return val
-                        }
-                        else if (val.speciality.toLowerCase().includes(this.state.searchQuery.toLowerCase())) {
-                            return val
-                        }
-                    }).map((val, key) => {
-                        return (
-                            <div className="card-position" key={key}>
-                                <div className="card-array">
-                                    <p>Name : {val.first_name} {val.last_name}</p>
-                                    <p className="special">Specility: {val.speciality}</p>
-                                </div>
-                            </div>
-                        )
-                    })
+                    {
+                        this.state.Result = JSONDATA.filter((val) => {
+                            if (val.first_name.toLowerCase().includes(this.state.searchQuery.toLowerCase()) ||
+                                val.last_name.toLowerCase().includes(this.state.searchQuery.toLowerCase()) ||
+                                (val.speciality.toLowerCase().includes(this.state.searchQuery.toLowerCase())
+                                )) {
+                                return val
+                            }
+                        }).map((val, key) => {
+                            if (val) {
+                                return (
+                                    <div className="card-position" key={key}>
+                                        <div className="card-array">
+                                            <p>Name : {val.first_name} {val.last_name}</p>
+                                            <p className="special">Specility: {val.speciality}</p>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        })
                     }
+
                 </div>
+                {
+
+                    this.state.Result.length === 0 ?
+                        <div className="error">
+                            Not Found
+                        </div> : ""
+                }
             </div>
         )
     }
